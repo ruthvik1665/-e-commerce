@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@headlessui/react": "^2.0.4",
+    "@headlessui/react": "^2.1.0",
     "@heroicons/react": "^2.1.4",
     "@reduxjs/toolkit": "^1.9.7",
     "@tailwindcss/aspect-ratio": "^0.4.2",
