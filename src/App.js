@@ -1,12 +1,12 @@
 
 import { Counter } from './features/counter/Counter';
 import './App.css';
-import ProductList from './features/product-list/ProductList';
+import ProductList from './features/product-list/components/ProductList';
 import HomePage from './Pages/Homepage';
 import LoginPage from './Pages/LoginPage';
 import Signup from './Pages/SignupPage';
 import { createRoot } from "react-dom/client";
-
+import ProductDeatail from './features/product-list/components/ProductDetail';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,6 +15,8 @@ import {
 } from "react-router-dom";
 import Cart from './features/cart/cart';
 import CartPage from './Pages/CartPagr';
+import CheckoutPage from './Pages/checkoutpage';
+import ProductDeatailPage from './Pages/ProductDetailsPage';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,12 @@ const router = createBrowserRouter([
   }, {
     path: "/cartpage",
     element: <><CartPage></CartPage></>,
+  }, {
+    path: "/checkout",
+    element: <><CheckoutPage></CheckoutPage></>,
+  }, {
+    path: "/productDetails",
+    element: <><ProductDeatailPage></ProductDeatailPage></>,
   },
 ]);
 
